@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+  .container {
+    width: 500px;
+    height: 200px;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .wrapper {
+    white-space: nowrap;
+    font-size: 20px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script src="../lib/divScrollBar.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <p>Hello, Here you can replace an over-large element to test the scroll bar.</p>
+      <p>Hello, Here you can replace an over-large element to test the scroll bar.</p>
+      <p>Hello, Here you can replace an over-large element to test the scroll bar.</p>
+      <p>Hello, Here you can replace an over-large element to test the scroll bar.</p>
+      <p>Hello, Here you can replace an over-large element to test the scroll bar.</p>
+      <p>Hello, Here you can replace an over-large element to test the scroll bar.</p>
+    </div>
+  </div>
+  <script>
+  var config1 = {
+    color: '#0099cc',
+    borderRadius: 6,
+    opacity: 0.6,
+    width: 6,
+  }
+
+
+  var scrollBar1 = new divScrollBar('.container', config1);
+  scrollBar1.draw();
+  </script>
+</body>
+
+</html>
